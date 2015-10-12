@@ -1,4 +1,4 @@
-class CreatePeopleWithRoles < ActiveRecord::Migration
+class CreatePeopleWithRole < ActiveRecord::Migration
   def change
     create_table :people_with_roles do |t|
       t.belongs_to :person, index: true, foreign_key: true
