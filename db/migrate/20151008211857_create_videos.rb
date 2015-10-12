@@ -3,8 +3,6 @@ class CreateVideos < ActiveRecord::Migration
     create_table :videos do |t|
       t.string :title, null: false
       t.string :desc, null: false
-      t.string :directors
-      t.string :actors
 
       t.timestamps null: false
     end
