@@ -1,8 +1,8 @@
 class CreateVideos < ActiveRecord::Migration
   def change
     create_table :videos do |t|
-      t.string :title
-      t.string :desc
+      t.string :title, null: false
+      t.string :desc, null: false
       t.string :directors
       t.string :actors
 
