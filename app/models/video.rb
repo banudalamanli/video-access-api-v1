@@ -5,4 +5,18 @@ class Video < ActiveRecord::Base
 	
 	validates :title, :desc, presence: true
 	# http://www.informit.com/articles/printerfriendly/2220311jw
+
+	# def to_json
+	# 	{
+	# 		video: {
+	# 			id: id,
+	# 			title: title,
+	# 			desc: desc,
+	# 			actors: people.actors.map(&:name),
+	# 			directors: people.directors.map(&:name)
+	# 		},
+	# 		success: true
+	# 	}.to_json
+	# end
+
 end
